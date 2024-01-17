@@ -1,0 +1,35 @@
+﻿@model IEnumerable<WebApplication2.Models.Student>
+
+<h2>Index</h2>
+
+<table class="table">
+    <thead>
+        <tr>
+            <th>StudentId</th>
+            <th>SecondName</th>
+            <th>Name</th>
+            <th>Surname</th>
+            <th>Height</th>
+            <th>BirthDay</th>
+            <th>Group</th>
+            <th>Speciality</th>
+            <th>Scholarship</th>
+        </tr>
+    </thead>
+    <tbody>
+        @foreach (var item in Model)
+        {
+            <tr>
+                <td>@item.StudentId</td>
+                <td>@item.SecondName</td>
+                <td>@item.Name</td>
+                <td>@item.Surname</td>
+                <td>@item.Height</td>
+                <td>@item.BirthDay</td>
+                <td>@item.Group</td>
+                <td>@item.Speciality</td>
+                <td>@item.Scholarship</td>
+            </tr>
+        }
+    </tbody>
+</table>
